@@ -8,10 +8,12 @@ This project presents an experimental music classifier to classify two midi data
 
 # Ground Truth Example
 The images below show midi clips with ground truth labels.
+<br>
 ![Alt text](05-visualization/20230509_092423_ground_truth_labels.png)
 
 # Prediction Example
 The project built a model that classifies these images at approximately 85% accuracy. Blue lables in the picture below show wrong predictions.
+<br>
 ![Alt text](05-visualization/20230509_092423_classification_result.png)
 
 # How to use pretrained model?
