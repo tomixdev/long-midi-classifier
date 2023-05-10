@@ -1,20 +1,16 @@
 Music Classification Based on Long-term Form
 
-
-# Motivation
+# Motivation 
 A successful piece of music requires skillful ordering of diverse musical components. The recent development of sound synthesis technology and music generation algorithms has provided inspirational methods for generating components of music including melody, harmony, and timbre. Computational generation of an entire piece with a long-term musical narrative, however, has remained a challenge and a frequently neglected aspect of algorithmic music generation.
 
-This project presents an experimental music classifier to classify two midi datasets: real classical compositions and segments of them. 
+# What This Project Does
+This project presents an experimental music classifier to classify two midi datasets: real classical compositions (labelled "good") and random 1-2-minute segments of them ("labelled "bad"). This labelling method is due to the belief that segmented pieces of music do not present long-term musical consistency while complete real compositions do.
 
-
-* My re'search proposes the concept and implementation of "Form Sampling"—the third type of sampling technology after sampling of sound (i.e. conventional sampling) and sampling of space (i.e., convolution reverb). The investigated algorithm can: (1) search for an audio segment from an audio database; (2) automatically map its appropriate features to parameters of an existing short-term music generation algorithm; (3) and generate a "vomit draft" of an entire piece that embrace a global design and leaves the comfort of editing to a music creator. Both qualitative and quantitative results of a randomized blind test conducted for 23 music composition domain experts suggested the effectiveness of the algorithm for long-term musical form generation. I anticipate my study to be a starting point for more sophisticated end-to-end models for compositional creativity in music. Furthermore, designing an algorithm for the global form designing process in music creation will be critical to make AI-assisted music composition technologies practical and meaningful to a wider range of real-world music creators. 
-
-
+The images below show midi clips with ground truth labels.
 ![Alt text](05-visualization/20230509_092423_ground_truth_labels.png)
 
+The project built a model that classifies these images at approximately 85% accuracy. (Blue lables show)
 ![Alt text](05-visualization/20230509_092423_classification_result.png)
-
-
 
 # How to use pretrained model?
 * pretrained models are available. to use use 
@@ -23,7 +19,6 @@ import torch
 torch.
 
 fc feature層の付け替えに関する記述。
-
 ```
 
 # How to train your own model?
@@ -33,8 +28,5 @@ fc feature層の付け替えに関する記述。
 * run src step2_2_midi2img_without_image_preprocessing.py to convert midi files into 
 
 
-
-# Future work
-The work is in progress. The final goal is to create a music generator that can generate instrumental piano music with a formal consistency. 
-
-* Create a generator  that can be classified as "good"
+# What to come next?
+The work is in progress. Now that that a classifier based on the success of musical form is here, the next step is to built a music generator whose outcomes can convince the classifier of its musical consistency.
