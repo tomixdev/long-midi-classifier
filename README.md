@@ -24,8 +24,8 @@ The project built a model that classifies these images at approximately 85% accu
 1. clone this repo
 2. Put all midi files you want to classify as 'good' under `02-raw-midi-data/good` directory. 
 3. Put all midi files you want to classify as 'bad' under `02-raw-midi-data/bad` directory.
-4. Run `python src/step2_2_midi2img_without_image_preprocessing.py` to convert midi files into images.
-5. Run `python src/step3_build_binary_classifier.py` to build a model. The model will be saved ujnder `04-model-ckpt/` directory.
+4. Run `src/step2_2_midi2img_without_image_preprocessing.py` to convert midi files into images.
+5. Run `src/step3_build_binary_classifier.py` to build a model. The model will be saved ujnder `04-model-ckpt/` directory.
 
 ## What to come next?
 The work is in progress. Now that that a classifier based on the success of musical form is here, the next task is to built a music generator whose outcomes can convince the classifier of its musical consistency.
