@@ -12,7 +12,7 @@ The images below show midi clips with ground truth labels.
 ![Alt text](05-visualization/20230509_092423_ground_truth_labels.png)
 
 ## Prediction Example
-The project built a model that classifies these images at approximately 85% accuracy. Blue lables in the picture below show wrong predictions.
+The project built a model that classifies these images at approximately 85% accuracy. Blue labels in the picture below show wrong predictions.
 <br>
 ![Alt text](05-visualization/20230509_092423_classification_result.png)
 
@@ -25,7 +25,7 @@ The project built a model that classifies these images at approximately 85% accu
 2. Put all midi files you want to classify as 'good' under `02-raw-midi-data/good` directory. 
 3. Put all midi files you want to classify as 'bad' under `02-raw-midi-data/bad` directory.
 4. Run `python src/step2_2_midi2img_without_image_preprocessing.py` to convert midi files into images.
-5. Run `python src/step3_build_binary_classifier.py` to build a model. The model will be saved to `04-model-ckpt`.
+5. Run `python src/step3_build_binary_classifier.py` to build a model. The model will be saved ujnder `04-model-ckpt/` directory.
 
 ## What to come next?
 The work is in progress. Now that that a classifier based on the success of musical form is here, the next task is to built a music generator whose outcomes can convince the classifier of its musical consistency.
