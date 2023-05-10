@@ -1,4 +1,4 @@
-# Music Classification Based on Long-term Form
+Music Classification Based on Long-term Form
 
 
 # Motivation
