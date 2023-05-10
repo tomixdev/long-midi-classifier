@@ -9,11 +9,11 @@ This project presents an experimental music classifier to classify two midi data
 The images below show midi clips with ground truth labels.
 ![Alt text](05-visualization/20230509_092423_ground_truth_labels.png)
 
-The project built a model that classifies these images at approximately 85% accuracy. (Blue lables show)
+The project built a model that classifies these images at approximately 85% accuracy. Blue lables in the picture below show wrong predictions.
 ![Alt text](05-visualization/20230509_092423_classification_result.png)
 
 # How to use pretrained model?
-* pretrained models are available. to use use 
+* pretrained models are available. 
 ```python
 import torch
 torch.
