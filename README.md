@@ -16,21 +16,16 @@ The project built a model that classifies these images at approximately 85% accu
 <br>
 ![Alt text](05-visualization/20230509_092423_classification_result.png)
 
-## How to use pretrained model?
-* pretrained models are available in `04-model-ckpt` folder. To use them 
-```python
-import torch
-torch.
-
-fc feature層の付け替えに関する記述。
-```
+## How to use the model pretrained in this project?
+* Pretrained models are available in `04-model-ckpt` folder. 
+* The model currently assumes **performance-based** piano midi. 
 
 ## How to train your own model?
-* only for piano midi. prefarably performance midi
-* `git clone`
-* `put raw-midi-data`, if place any midi files that you want to classifiy as "good" to the "good" folder. Place anything you want to classify as "bad" to "bad" folder.
-* run src step2_2_midi2img_without_image_preprocessing.py to convert midi files into 
-
+1. clone this repo
+2. Put all midi files you want to classify as 'good' under `02-raw-midi-data/good` directory. 
+3. Put all midi files you want to classify as 'bad' under `02-raw-midi-data/bad` directory.
+4. Run `python src/step2_2_midi2img_without_image_preprocessing.py` to convert midi files into images.
+5. Run `python src/step3_build_binary_classifier.py` to build a model. The model will be saved to `04-model-ckpt`.
 
 ## What to come next?
-The work is in progress. Now that that a classifier based on the success of musical form is here, the next step is to built a music generator whose outcomes can convince the classifier of its musical consistency.
+The work is in progress. Now that that a classifier based on the success of musical form is here, the next task is to built a music generator whose outcomes can convince the classifier of its musical consistency.
