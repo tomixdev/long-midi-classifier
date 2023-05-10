@@ -1,18 +1,17 @@
-import numpy as np
 import step3_util
+import step3_params
 
-import torchvision.transforms as transforms
-
+import numpy as np
 import copy
+import os
+
 import torch
 import torchvision.datasets as datasets
 import torchvision.transforms as transforms
 from torch.utils.data import random_split
 
-import os
-import step3_params
 
-# Settings ----------------------------------------------------------------------------------------
+# Configurations ---------------------------------------------------------------------------------
 step3_util.set_plt_config()
 step3_util.set_np_config()
 
@@ -71,14 +70,16 @@ criterion = step3_params.criterion.to(device)
 optimizer = torch.optim.SGD(model.fc.parameters(), lr=lr, momentum=step3_params.optim_sgd_momentum)
 
 # Train Model -------------------------------------------------------------------------------------
-# history 初期化
+# initialize history
 history = np.zeros((0, 5))
 
 history = step3_util.fit(
     net=model, optimizer=optimizer, criterion=criterion, num_epochs=n_epochs, train_loader=train_loader, test_loader=test_loader, device=device, history=history
 )
 
-# Visualize Model ---------------------------------------------------------------------------------
+# Visualize Model Prediction -----------------------------------------------------------------------
 step3_util.evaluate_history(history)
-step3_util.show_images_labels(test_loader, label_list, net=model, device=device, figsize=(120, 15))
+step3_util.show_images_labels(test_loader, label_list, net=model, device=device, figsize=(15, 15))
+
+
 
