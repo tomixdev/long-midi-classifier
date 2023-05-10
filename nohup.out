@@ -1,0 +1,153 @@
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+/home/paperspace/Desktop
+no change     /home/paperspace/mambaforge-pypy3/condabin/conda
+no change     /home/paperspace/mambaforge-pypy3/bin/conda
+no change     /home/paperspace/mambaforge-pypy3/bin/conda-env
+no change     /home/paperspace/mambaforge-pypy3/bin/activate
+no change     /home/paperspace/mambaforge-pypy3/bin/deactivate
+no change     /home/paperspace/mambaforge-pypy3/etc/profile.d/conda.sh
+no change     /home/paperspace/mambaforge-pypy3/etc/fish/conf.d/conda.fish
+no change     /home/paperspace/mambaforge-pypy3/shell/condabin/Conda.psm1
+no change     /home/paperspace/mambaforge-pypy3/shell/condabin/conda-hook.ps1
+no change     /home/paperspace/mambaforge-pypy3/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     /home/paperspace/mambaforge-pypy3/etc/profile.d/conda.csh
+no change     /home/paperspace/.bashrc
+No action taken.
+jupyter-notebook: no process found
+[I 02:32:57.662 NotebookApp] Authentication of /metrics is OFF, since other authentication is disabled.
+[W 02:32:58.033 NotebookApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 02:32:58.043 NotebookApp] Serving notebooks from local directory: /home/paperspace/Desktop/src
+[I 02:32:58.043 NotebookApp] Jupyter Notebook 6.5.3 is running at:
+[I 02:32:58.043 NotebookApp] http://localhost:25441/
+[I 02:32:58.043 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 02:38:03.973 NotebookApp] 302 GET / (::1) 0.470000ms
+[I 02:38:20.869 NotebookApp] 302 GET /api/kernelspecs/ (::1) 0.440000ms
+[W 02:38:22.155 NotebookApp] 403 POST /api/sessions (::1): '_xsrf' argument missing from POST
+[W 02:38:22.155 NotebookApp] '_xsrf' argument missing from POST
+[W 02:38:22.156 NotebookApp] 403 POST /api/sessions (::1) 1.720000ms referer=None
+[I 02:38:22.560 NotebookApp] 302 GET /login (::1) 0.920000ms
+[I 02:38:22.976 NotebookApp] 302 GET / (::1) 0.670000ms
+[I 02:38:24.002 NotebookApp] 302 POST /login (::1) 0.980000ms
+[I 02:38:24.398 NotebookApp] 302 GET / (::1) 0.740000ms
+[I 02:38:25.194 NotebookApp] Kernel started: 910dde10-9205-4ff4-a839-2c86f687a281, name: python3
+[W 02:38:26.338 NotebookApp] No session ID specified
+[E 02:45:25.977 NotebookApp] Uncaught exception in ZMQStream callback
+    Traceback (most recent call last):
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 584, in _run_callback
+        f = callback(*args, **kwargs)
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 308, in stream_callback
+        return callback(self, msg)
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/notebook/services/kernels/handlers.py", line 572, in _on_zmq_reply
+        super()._on_zmq_reply(stream, msg)
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/notebook/base/zmqhandlers.py", line 256, in _on_zmq_reply
+        self.write_message(msg, binary=isinstance(msg, bytes))
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/websocket.py", line 339, in write_message
+        return self.ws_connection.write_message(message, binary=binary)
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/websocket.py", line 1086, in write_message
+        fut = self._write_frame(True, opcode, message, flags=flags)
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/websocket.py", line 1061, in _write_frame
+        return self.stream.write(frame)
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/iostream.py", line 540, in write
+        self._write_buffer.append(data)
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/iostream.py", line 157, in append
+        b += data  # type: ignore
+    BufferError: Existing exports of data: object cannot be re-sized
+[E 02:45:25.985 NotebookApp] Uncaught exception in zmqstream callback
+    Traceback (most recent call last):
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 621, in _handle_events
+        self._handle_recv()
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 650, in _handle_recv
+        self._run_callback(callback, msg)
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 584, in _run_callback
+        f = callback(*args, **kwargs)
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 308, in stream_callback
+        return callback(self, msg)
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/notebook/services/kernels/handlers.py", line 572, in _on_zmq_reply
+        super()._on_zmq_reply(stream, msg)
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/notebook/base/zmqhandlers.py", line 256, in _on_zmq_reply
+        self.write_message(msg, binary=isinstance(msg, bytes))
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/websocket.py", line 339, in write_message
+        return self.ws_connection.write_message(message, binary=binary)
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/websocket.py", line 1086, in write_message
+        fut = self._write_frame(True, opcode, message, flags=flags)
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/websocket.py", line 1061, in _write_frame
+        return self.stream.write(frame)
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/iostream.py", line 540, in write
+        self._write_buffer.append(data)
+      File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/iostream.py", line 157, in append
+        b += data  # type: ignore
+    BufferError: Existing exports of data: object cannot be re-sized
+Exception in callback BaseAsyncIOLoop._handle_events(34, 1)
+handle: <Handle BaseAsyncIOLoop._handle_events(34, 1)>
+Traceback (most recent call last):
+  File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/platform/asyncio.py", line 206, in _handle_events
+    handler_func(fileobj, events)
+  File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 621, in _handle_events
+    self._handle_recv()
+  File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 650, in _handle_recv
+    self._run_callback(callback, msg)
+  File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 584, in _run_callback
+    f = callback(*args, **kwargs)
+  File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 308, in stream_callback
+    return callback(self, msg)
+  File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/notebook/services/kernels/handlers.py", line 572, in _on_zmq_reply
+    super()._on_zmq_reply(stream, msg)
+  File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/notebook/base/zmqhandlers.py", line 256, in _on_zmq_reply
+    self.write_message(msg, binary=isinstance(msg, bytes))
+  File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/websocket.py", line 339, in write_message
+    return self.ws_connection.write_message(message, binary=binary)
+  File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/websocket.py", line 1086, in write_message
+    fut = self._write_frame(True, opcode, message, flags=flags)
+  File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/websocket.py", line 1061, in _write_frame
+    return self.stream.write(frame)
+  File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/iostream.py", line 540, in write
+    self._write_buffer.append(data)
+  File "/home/paperspace/mambaforge-pypy3/envs/my-remote-venv/lib/python3.10/site-packages/tornado/iostream.py", line 157, in append
+    b += data  # type: ignore
+BufferError: Existing exports of data: object cannot be re-sized
+[I 02:59:14.114 NotebookApp] Kernel interrupted: 910dde10-9205-4ff4-a839-2c86f687a281
+[I 02:59:35.167 NotebookApp] Kernel interrupted: 910dde10-9205-4ff4-a839-2c86f687a281
+[I 02:59:38.201 NotebookApp] Kernel restarted: 910dde10-9205-4ff4-a839-2c86f687a281
+[I 02:59:38.699 NotebookApp] Starting buffering for 910dde10-9205-4ff4-a839-2c86f687a281:f32a4d54-ebe2edf3b082e2811fbc4b27
+[I 02:59:38.708 NotebookApp] Kernel shutdown: 910dde10-9205-4ff4-a839-2c86f687a281
+[I 02:59:39.204 NotebookApp] 302 GET /api/kernelspecs/ (::1) 0.950000ms
+[I 02:59:39.986 NotebookApp] Kernel started: 8fb342ea-fc39-4eb3-b5ec-bf0138bca539, name: python3
+[I 02:59:58.750 NotebookApp] Kernel shutdown: 8fb342ea-fc39-4eb3-b5ec-bf0138bca539
+Connection to 172.83.15.20 closed by remote host.
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+/home/paperspace/Desktop
+no change     /home/paperspace/mambaforge-pypy3/condabin/conda
+no change     /home/paperspace/mambaforge-pypy3/bin/conda
+no change     /home/paperspace/mambaforge-pypy3/bin/conda-env
+no change     /home/paperspace/mambaforge-pypy3/bin/activate
+no change     /home/paperspace/mambaforge-pypy3/bin/deactivate
+no change     /home/paperspace/mambaforge-pypy3/etc/profile.d/conda.sh
+no change     /home/paperspace/mambaforge-pypy3/etc/fish/conf.d/conda.fish
+no change     /home/paperspace/mambaforge-pypy3/shell/condabin/Conda.psm1
+no change     /home/paperspace/mambaforge-pypy3/shell/condabin/conda-hook.ps1
+no change     /home/paperspace/mambaforge-pypy3/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     /home/paperspace/mambaforge-pypy3/etc/profile.d/conda.csh
+no change     /home/paperspace/.bashrc
+No action taken.
+channel 3: open failed: connect failed: Connection refused
+jupyter-notebook: no process found
+channel 3: open failed: connect failed: Connection refused
+channel 3: open failed: connect failed: Connection refused
+channel 3: open failed: connect failed: Connection refused
+[I 06:09:51.275 NotebookApp] Authentication of /metrics is OFF, since other authentication is disabled.
+[W 06:09:51.664 NotebookApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 06:09:51.671 NotebookApp] Serving notebooks from local directory: /home/paperspace/Desktop/src
+[I 06:09:51.671 NotebookApp] Jupyter Notebook 6.5.3 is running at:
+[I 06:09:51.671 NotebookApp] http://localhost:25441/
+[I 06:09:51.671 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 06:09:57.237 NotebookApp] 302 GET / (::1) 0.470000ms
+[I 06:10:47.485 NotebookApp] 302 GET /api/kernelspecs/ (::1) 0.460000ms
+[I 06:10:48.803 NotebookApp] Kernel started: 82612126-3119-463b-be5d-541c6b464ab6, name: python3
+[W 06:10:49.963 NotebookApp] No session ID specified
+[I 06:28:36.552 NotebookApp] Kernel interrupted: 82612126-3119-463b-be5d-541c6b464ab6
+[I 06:28:54.433 NotebookApp] Kernel interrupted: 82612126-3119-463b-be5d-541c6b464ab6
+Connection to 172.83.15.20 closed by remote host.
