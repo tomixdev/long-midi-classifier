@@ -7,17 +7,13 @@ raw-midi-dataにあるmidi dataをすべて、generated-midi-imagesのfolderに�
 
 """
 import concurrent.futures
-import sys
-import pandas as pd
-import project_specific_util as u
-import time
-import pretty_midi
-import numpy as np
-import matplotlib.pyplot as plt
-import torch
-import pprint
-import re
 import os
+
+import torch
+import pandas as pd
+import matplotlib.pyplot as plt
+
+import project_specific_util as u
 import params as p
 import step2common
 

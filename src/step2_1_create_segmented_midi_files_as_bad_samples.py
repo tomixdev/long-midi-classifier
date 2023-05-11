@@ -1,14 +1,11 @@
-import sys
-
 import step2common
 import pretty_midi
 import random
+import os
+import concurrent.futures
+
 import params as p
 import project_specific_util as u
-import math
-import os
-import glob
-import concurrent.futures
 
 random.seed(p.RAND_SEED)
 SEGMENTED_MIDI_DIR = p.RAW_MIDI_DATA_FOLDER + "fake-or-bad-classical-compositions/segments-from-real-compositions/"
