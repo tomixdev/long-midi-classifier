@@ -1,6 +1,6 @@
+import torch
 import torchvision.models 
 from torchvision.transforms.functional import InterpolationMode
-import torch
 import params
 
 RAND_SEED = params.RAND_SEED
