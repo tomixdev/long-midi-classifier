@@ -1,10 +1,12 @@
 import copy
 import hashlib
+import warnings
+import json
+
+import numpy as np
+
 from . import file_and_dir_interaction_util
 from . import misc_util as mh
-import json
-import numpy as np
-import warnings
 
 read_first_time_str = 'read_first_time'
 

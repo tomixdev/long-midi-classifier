@@ -1,7 +1,5 @@
 import logging
-import pprint
 import sys
-import numpy as np
 import inspect
 import os
 import librosa
@@ -13,10 +11,10 @@ import pstats
 import cProfile
 import time
 import random
-from . import terminal_interaction_util
-import copy
-import types
 
+import numpy as np
+
+from . import terminal_interaction_util
 
 # Tested on Sep 8....Not sure if this is an ideal implementation. But I found this is practically fast enough
 # However, if I put anything that is too long (for example, the audio amplitude data of an entire audio),

@@ -1,8 +1,9 @@
 import json
+import os
+
+import numpy as np
 
 from . import file_and_dir_interaction_util
-import numpy as np
-import os
 
 
 def convert_a_variable_to_json_serializable_datatypes(item):

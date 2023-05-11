@@ -1,9 +1,10 @@
-import sqlite3
 import numpy as np
 
 from . import data_structure_util
 from . import terminal_interaction_util
 from . import misc_util as mh
+
+import sqlite3
 import inspect
 import ast
 import json

@@ -1,9 +1,9 @@
 import concurrent.futures
 import subprocess
 import sys
+import pprint
 
 from . import terminal_interaction_util
-import pprint
 
 
 def _worker(command_str, process_number):

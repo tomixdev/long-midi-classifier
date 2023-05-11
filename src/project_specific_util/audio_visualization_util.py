@@ -1,7 +1,8 @@
 import librosa
+import librosa.display
+
 import numpy as np
 import matplotlib.pyplot as plt
-import librosa.display
 
 def draw_waveform(y, sr):
     plt.figure(figsize=(15, 3))

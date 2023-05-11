@@ -4,6 +4,7 @@ import os.path
 
 import numpy as np
 from sklearn.preprocessing import minmax_scale
+
 from . import misc_util
 
 

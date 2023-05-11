@@ -1,14 +1,16 @@
-import copy
+
 import numpy as np
 import matplotlib.pyplot as plt
-
-from . import data_structure_util
-from . import file_and_dir_interaction_util
-from . import misc_util as mh
 import seaborn
 #以下のどちらかのコードを使うと、グラフが少しかっこよくなる。
 #plt.style.use('ggplot')
 seaborn.set_style('darkgrid')
+
+import copy
+
+from . import data_structure_util
+from . import file_and_dir_interaction_util
+from . import misc_util as mh
 
 
 def plot_one_x_y_graph(X=None, 
